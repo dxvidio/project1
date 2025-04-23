@@ -1,0 +1,170 @@
+:root {
+  --bg-color: rgb(21, 21, 21);
+  --text-color: white;
+}
+
+.light-mode {
+  --bg-color: lightgray;
+  --text-color: black;
+}
+
+body {
+  font-family: 'Mona Sans', sans-serif;
+  font-weight: 600;
+  font-size: clamp(.8rem, .8vw, 1.2rem);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1 {
+  color: rgb(85, 127, 158);
+  font-weight: 600;
+  font-style: oblique;
+  font-family: 'Mona Sans', sans-serif;
+  text-shadow: 2px 2px 1px rgb(49, 47, 47);
+  font-size: clamp(1.5rem, 1.8vw, 3rem);
+  text-align: center;
+}
+
+h2 {
+  font-weight: 600;
+  text-align: center;
+  font-size: clamp(.8rem, 1vw, 1.2rem);
+  text-shadow: .5px .5px 2px rgb(144, 144, 144);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8vh;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.summary {
+  display: flex;
+  justify-content: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 3px;
+}
+
+main {
+  padding-top: 3vh;
+}
+
+footer {
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+footer > img {
+  aspect-ratio: 2;
+  width: 8%;
+  display: block;
+  max-width: 200px;
+}
+
+fieldset {
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: inset;
+}
+
+label {
+  font-weight: 400;
+}
+
+.outer-list {
+  padding-inline-start: 20px;
+}
+
+.snip > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 4px;
+}
+
+.featured {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.inner-list li::marker {
+  content: "> ";
+}
+
+.nav-link {
+  color: rgb(85, 127, 158);
+  text-decoration: none;
+}
+
+.nav-link:visited {
+  color: blueviolet;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.gear-item::before {
+  content: "📸 ";
+  font-size: 1em;
+  margin-right: 0.2em;
+}
+
+span {
+  font-style: italic;
+}
+
+img[alt*="waikiki"] {
+  border-radius: 10px;
+}
+
+/* iPad Portrait */
+@media (max-width: 780px) {
+  footer {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  header {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  span {
+    display: block;
+  }
+}
+
+/* Mobile Portrait */
+@media (max-width: 480px) {
+  footer {
+    padding-left: 5px;
+    padding-right: 5px;
+    flex-direction: column-reverse;
+  }
+  header {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  footer > img {
+    width: 20%;
+    padding-bottom: 10px;
+  }
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

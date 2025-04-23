@@ -2,15 +2,84 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
-    <meta name="description" content="">
+    <title>snipp</title>
+    <meta name="description" content="A canvas of snippets I've captured on video over the past few months, implemented with HTML5, CSS, and Javascript.">
+    <meta name="author" content="David Lee">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <h1>Project 1</h1>
+    <header>
+      <button id="toggle-theme">light/dark</button>
+      <nav>
+        <a class="nav-link" href="https://www.dxvidio.com/dxvidio" target="_blank">website</a> |
+        <a class="nav-link" href="https://www.instagram.com/dxvidiostuff" target="_blank">ig</a> |
+        <a class="nav-link" href="https://www.youtube.com/@dxvidiostuff" target="_blank">yt</a>
+      </nav>
+    </header>
+
+    <h1>snipp</h1>
     
-    <script src="" async defer></script>
+    <h2>“When I looked at life through the camera, I felt like I could finally see it.” <span>- Katherine Howe</span></h2>
+      
+    <main>
+      <div class="grid-container">
+        <div class="snip"> <img src="clips/1.gif" alt="snippet from waikiki"> </div>
+        <div class="snip"> <img src="clips/2.gif" alt="snippet from waikiki"> </div>
+        <div class="snip"> <img src="clips/3.gif" alt="snippet from waikiki"> </div>
+        <div class="snip featured"> <img src="clips/4.gif" alt="snippet from waikiki"> </div>
+        <div class="snip"> <img src="clips/5.gif" alt="snippet from waikiki"> </div>
+        <div class="snip featured"> <img src="clips/6.gif" alt="snippet from ucla"> </div>
+        <div class="snip"> <img src="clips/7.gif" alt="snippet from ucla"> </div>
+        <div class="snip"> <img src="clips/8.gif" alt="snippet from ucla"> </div>
+        <div class="snip"> <img src="clips/9.gif" alt="snippet from ucla"> </div>
+        <div class="snip"> <img src="clips/10.gif" alt="snippet from ucla"> </div>
+        <div class="snip featured"> <img src="clips/11.gif" alt="snippet from ucla"> </div>
+        <div class="snip"> <img src="clips/12.gif" alt="snippet from treasure island"> </div>
+        <div class="snip"> <img src="clips/13.gif" alt="snippet from waikiki"> </div>
+        <div class="snip"> <img src="clips/14.gif" alt="snippet from waikiki"> </div>
+        <div class="snip featured"> <img src="clips/15.gif" alt="snippet from waikiki"> </div>
+        <div class="snip"> <img src="clips/16.gif" alt="snippet from waikiki"> </div>
+        <div class="snip"> <img src="clips/17.gif" alt="snippet from melrose"> </div>
+        <div class="snip"> <img src="clips/18.gif" alt="snippet from dockweiler"> </div>
+      </div>
+    </main>
+
+    <footer>
+      <ul class="outer-list">
+        <li>shot in 2025</li>
+        <li class="gear-item">gear:
+          <ul class="inner-list">
+            <li>sony dcr-42</li>
+            <li>sony a7c</li>
+            <li>sony kit lens</li>
+          </ul>
+        </li>
+      </ul>
+
+      <form>
+        <fieldset>
+          <legend>Contact me: </legend>
+          <label for="name">name:</label>
+          <input type="text" id="name" name="name" required pattern="[A-Za-z\s]+" placeholder="first last">
+          <br>
+          <label for="email">email:</label>
+          <input type="email" id="email" name="email" required placeholder="you@example.com">
+          <br>
+          <label for="interest">rate your interest in film (1-5)</label>
+          <input type="range" id="interest" name="interest" min="1" max="5">
+          <br>
+          <input type="submit">
+        </fieldset>
+      </form>
+
+      <img src="dxvidio.png" alt="my watermark">
+    </footer>
+    
+    <script src="script.js"></script>
   </body>
 </html>
