@@ -5,22 +5,23 @@ CHOICES
  which one you chose using the letter provided in the spec. Separate the letters with a comma
  In some cases you will also need to tell us what you did)
 -------
-9a. I added a text shadow to the h1 heading "snipp"
-9b. I implemented responsive text using clamp() and setting the min and max bounds using relative rem units.
-12.
-18.
-19.
+9a. I added a text shadow to the h1 heading "snipp" and the h2 heading (quote by Katherine Howe).
+9b. I implemented responsive text using clamp() and setting the min and max bounds using relative rem units for the body, h1, and h2 text.
+12. b. I implemented two different text shadows to both the h1 and h2 headings, d. For the input form, I implemented an inset border style and also changed the border radius. 
+18. b. I implemented a pseudo-element (::before) to the second li in the outer-list. Specifically, I added a camera emoji before the "gear" list item.
+19. Duplicate, same as 12.
 
 JAVASCRIPT
 (Please tells us what the JavaScript does e.g. "click on the green button and it does the following...")
 ----------
-
+Click on the light/dark button and it will toggle the theme of the webpage between light and dark mode. It works by selecting the body element upon click of the button and either adding or removing the "light-mode" class based on its current state. 
 
 
 
 NOTES TO STAFF
 (If there is anything you need to tell us, please use the section below)
 ---------------
+There were issues where the nav-link would not consistently change styles after the first visit, I think it may be a browser issue (requirement 20a). I did add the .nav-link:visited css code to change the styles.
 
 
 
@@ -32,22 +33,22 @@ REQUIREMENT LOCATION
 (After the period, hit TAB and then enter the HTML page name where the requirement
  was implemented)
 ---------------------
- 2.
- 3.
- 4.
- 5.
- 6.
- 7.
- 8.
- 9.
-10.
-11.
-12.
-13.
-14.
-15.
-16.
-17.
-18.
-19.
-20.
+ 2. index.html
+ 3. style.css
+ 4. index.html
+ 5. index.html
+ 6. index.html
+ 7. index.html
+ 8. style.css
+ 9. style.css
+10. script.js
+11. index.html
+12. style.css
+13. style.css
+14. style.css
+15. style.css
+16. style.css
+17. index.html
+18. style.css
+19. style.css
+20. index.html
